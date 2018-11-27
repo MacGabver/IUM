@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ERROR :"
+                android:id="@+id/errorText"
+                android:background="@color/blue"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Login :"
+                android:textSize="36dp"
+                android:background="@color/blue"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/colorAccent"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <!-- Prenom -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:text="Username :"
+                android:textColor="@color/black"
+                android:textSize="32dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:hint="ex: paolo2301"/>
+
+            <!-- Nom -->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:text="Password :"
+                android:textColor="@color/black"
+                android:textSize="32dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="36dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:background="@color/colorAccent"
+                android:id="@+id/insert"
+                android:text="Insert"
+                style="@style/Widget.AppCompat.Button.Colored"
+                />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
